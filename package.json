@@ -1,21 +1,15 @@
 {
   "name": "pptcreate",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "PowerPoint presentation generator",
+  "main": "generate-slides.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate": "node generate-slides.js",
+    "test": "node generate-slides.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "http://local_proxy@127.0.0.1:25690/git/templatedop/pptcreate"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "cheerio": "^1.1.2",
-    "html2pptx": "^0.0.5",
     "pptxgenjs": "^4.0.1"
-  }
+  },
+  "author": "",
+  "license": "ISC"
 }
