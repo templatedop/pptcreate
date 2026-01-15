@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide 13 - DAK SEWA APP - Users</title>
+  <link rel="stylesheet" href="../shared.css">
+  <style>
+    .slide {
+      background: #f9fafb;
+    }
+
+    .user-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .user-card {
+      background: white;
+      padding: 16px 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-left: 5px solid;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .user-card.blue {
+      border-left-color: #1e40af;
+    }
+
+    .user-card.teal {
+      border-left-color: #06b6d4;
+    }
+
+    .user-card.purple {
+      border-left-color: #8b5cf6;
+    }
+
+    .user-card.orange {
+      border-left-color: #f97316;
+    }
+
+    .user-card.green {
+      border-left-color: #10b981;
+    }
+
+    .user-number {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .user-number.blue {
+      background: #1e40af;
+    }
+
+    .user-number.teal {
+      background: #06b6d4;
+    }
+
+    .user-number.purple {
+      background: #8b5cf6;
+    }
+
+    .user-number.orange {
+      background: #f97316;
+    }
+
+    .user-number.green {
+      background: #10b981;
+    }
+
+    .user-info {
+      flex: 1;
+    }
+
+    .user-info h4 {
+      font-size: 14px;
+      font-weight: bold;
+      color: #1f2937;
+      margin-bottom: 4px;
+    }
+
+    .user-info p {
+      font-size: 12px;
+      color: #6b7280;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="title-zone">
+      <h1>DAK SEWA APP - Users</h1>
+    </div>
+    <div class="content-zone">
+      <div class="user-cards">
+        <div class="user-card blue">
+          <div class="user-number blue">
+            <p>1</p>
+          </div>
+          <div class="user-info">
+            <h4>Open Users</h4>
+            <p>No login required</p>
+          </div>
+        </div>
+        <div class="user-card teal">
+          <div class="user-number teal">
+            <p>2</p>
+          </div>
+          <div class="user-info">
+            <h4>Guest Users</h4>
+            <p>Mobile/OTP verification</p>
+          </div>
+        </div>
+        <div class="user-card purple">
+          <div class="user-number purple">
+            <p>3</p>
+          </div>
+          <div class="user-info">
+            <h4>Contractual Customers</h4>
+            <p>Full registration</p>
+          </div>
+        </div>
+        <div class="user-card orange">
+          <div class="user-number orange">
+            <p>4</p>
+          </div>
+          <div class="user-info">
+            <h4>DNK Customers</h4>
+            <p>IEC Code, GST verification</p>
+          </div>
+        </div>
+        <div class="user-card green">
+          <div class="user-number green">
+            <p>5</p>
+          </div>
+          <div class="user-info">
+            <h4>Agents and Vendors</h4>
+            <p>Registration provided</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
