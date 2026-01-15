@@ -1,0 +1,15 @@
+{
+  "name": "pptcreate",
+  "version": "1.0.0",
+  "description": "PowerPoint presentation generator",
+  "main": "generate-slides.js",
+  "scripts": {
+    "generate": "node generate-slides.js",
+    "test": "node generate-slides.js"
+  },
+  "dependencies": {
+    "pptxgenjs": "^4.0.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
