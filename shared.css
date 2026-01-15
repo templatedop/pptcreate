@@ -1,0 +1,342 @@
+/* APT 2.0 Presentation - Shared Styles */
+
+:root {
+  /* Color Palette */
+  --deep-blue: #1e40af;
+  --teal: #06b6d4;
+  --purple: #8b5cf6;
+  --orange: #f97316;
+  --green: #10b981;
+  --indigo: #6366f1;
+  --pink: #ec4899;
+  --yellow: #eab308;
+
+  /* Typography */
+  --font-family: 'Segoe UI', Arial, sans-serif;
+  --header-size: 34px;
+  --title-size: 76px;
+  --body-size: 14px;
+  --small-size: 11px;
+
+  /* Layout */
+  --slide-width: 960px;
+  --slide-height: 540px;
+  --title-padding-top: 44px;
+  --content-padding-bottom: 60px;
+  --border-radius: 12px;
+  --border-radius-small: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  width: var(--slide-width);
+  height: var(--slide-height);
+  overflow: hidden;
+}
+
+.slide {
+  width: var(--slide-width);
+  height: var(--slide-height);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Title Zone */
+.title-zone {
+  padding-top: var(--title-padding-top);
+  text-align: center;
+}
+
+.title-zone h1 {
+  font-size: var(--header-size);
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+/* Content Zone */
+.content-zone {
+  padding: 20px 40px var(--content-padding-bottom) 40px;
+}
+
+/* Badge Styles */
+.badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 4px;
+}
+
+.badge-blue {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+}
+
+.badge-teal {
+  background: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%);
+  color: white;
+}
+
+.badge-purple {
+  background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+  color: white;
+}
+
+.badge-orange {
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+  color: white;
+}
+
+.badge-green {
+  background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+  color: white;
+}
+
+.badge-indigo {
+  background: linear-gradient(135deg, #6366f1 0%, #818cf8 100%);
+  color: white;
+}
+
+.badge-pink {
+  background: linear-gradient(135deg, #ec4899 0%, #f472b6 100%);
+  color: white;
+}
+
+.badge-yellow {
+  background: linear-gradient(135deg, #eab308 0%, #fbbf24 100%);
+  color: #1f2937;
+}
+
+/* Card Styles */
+.card {
+  border-radius: var(--border-radius);
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.card p {
+  font-size: var(--small-size);
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Gradient Backgrounds */
+.gradient-blue {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3b82f6 100%);
+}
+
+.gradient-teal {
+  background: linear-gradient(135deg, #0e7490 0%, #06b6d4 50%, #22d3ee 100%);
+}
+
+.gradient-purple {
+  background: linear-gradient(135deg, #6d28d9 0%, #8b5cf6 50%, #a78bfa 100%);
+}
+
+.gradient-orange {
+  background: linear-gradient(135deg, #ea580c 0%, #f97316 50%, #fb923c 100%);
+}
+
+.gradient-green {
+  background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+}
+
+.gradient-indigo {
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 50%, #818cf8 100%);
+}
+
+.gradient-pink {
+  background: linear-gradient(135deg, #db2777 0%, #ec4899 50%, #f472b6 100%);
+}
+
+.gradient-yellow {
+  background: linear-gradient(135deg, #ca8a04 0%, #eab308 50%, #fbbf24 100%);
+}
+
+/* Grid Layouts */
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.grid-5col {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+/* Feature Lists */
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 16px;
+  margin-bottom: 8px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 12px;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.feature-item p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #374151;
+}
+
+/* Number Circle */
+.number-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* Principle Row */
+.principle-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.principle-info {
+  flex: 1;
+  background: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.principle-info h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.principle-info p {
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+/* Tech Badge */
+.tech-badge {
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Module Badge */
+.module-badge {
+  padding: 14px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.module-number {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  opacity: 0.9;
+}
+
+.module-badge p {
+  font-size: 11px;
+  line-height: 1.3;
+  color: white;
+}
+
+/* Feature Card for Grid */
+.feature-card {
+  background: white;
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid;
+  height: 100%;
+}
+
+.feature-card h4 {
+  font-size: 13px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 6px;
+}
+
+.feature-card p {
+  font-size: 11px;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+/* Color Dots */
+.color-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
